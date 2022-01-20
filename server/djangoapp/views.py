@@ -20,7 +20,6 @@ def about(request):
     return render(request, 'djangoapp/about.html', {})
 
 
-
 # Create a `contact` view to return a static contact page
 def contact(request):
     return render(request, 'djangoapp/contact.html', {})

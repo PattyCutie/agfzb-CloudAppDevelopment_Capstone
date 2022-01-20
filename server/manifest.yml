@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: thebestcarsdjangoapp
     routes:
-      - route: $HOST.$DOMAIN
+      - route: patpicha-cars.apic.eu-gb.mybluemix.net 
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: thebestdjangoapp-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: patpicha-cars.eu-gb.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
