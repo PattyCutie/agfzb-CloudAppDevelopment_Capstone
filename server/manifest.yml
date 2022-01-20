@@ -4,7 +4,7 @@
       - route: patpicha-cars.apic.eu-gb.mybluemix.net 
     memory: 128M
     buildpack: python_buildpack
-  - name: thebestdjangoapp-nginx
+  - name: thebestcarsdjangoapp-nginx
     routes:
       - route: patpicha-cars.eu-gb.cf.appdomain.cloud/static
     memory: 128M
