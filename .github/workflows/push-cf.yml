@@ -9,7 +9,7 @@ env:
   IBM_CLOUD_SPACE: capstoneproject
   IBM_CLOUD_ORG: iamsureiamcute@gmail.com
   MANIFEST_NAME: manifest.yml
-  IBM_CLOUD_API: ${{secrets.CAPSTONE_PROJECT}}
+  IBM_CLOUD_API: ${{secrets.IBM_CLOUD_API_KEY}}
 
 defaults:
   run:
