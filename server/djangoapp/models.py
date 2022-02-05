@@ -10,10 +10,9 @@ from django.utils.timezone import now
 class CarMake(models.Model):
     name = models.CharField(null=False, max_length=100, default='Name')
     description = models.TextField(null=False, max_length=400, default='Description')
-    state = models.CharField(null=False, max_length=100, default='State')
     
     def __str__(self):
-        return self.name
+        return "Name: " + self.name
 
 
 # <HINT> Create a Car Model model `class CarModel(models.Model):`:
@@ -40,14 +39,14 @@ class CarModel(models.Model):
         (OTHERS, 'OTHERS')
     ]
 
-    carmake = models.ForeignKey(CarMake, null=True, on_delete=models.CASCADE)
     name = models.CharField(null=False, max_length=100, default='Name')
-    dealer_id = models.IntegerField(null=True)
+    id = models.IntegerField(default=1, primary_key=True)
+    make = models.ForeignKey(CarMake, null=True, on_delete=models.CASCADE)
     type = models.CharField(null=True, max_length=20, choices=TYPE)
     year = models.DateField(null=True)
 
     def __str__(self):
-        return self.name
+        return "Name: " + self.name
     
 # <HINT> Create a plain Python class `CarDealer` to hold dealer data
 
