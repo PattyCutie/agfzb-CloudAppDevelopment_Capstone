@@ -20,7 +20,7 @@ spec:
         run: dealership
     spec:
       containers:
-      - image: uk.icr.io/$MY_NAMESPACE/dealership:latest
+      - image: uk.icr.io/djangoapp_fianl1/dealership:latest
         imagePullPolicy: Always
         name: dealership
         ports:
