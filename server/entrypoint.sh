@@ -9,7 +9,7 @@
 
         echo "PostgreSQL started"
     fi
-
+    python manage.py collectstatic--noinput
     # Make migrations and migrate the database.
     echo "Making migrations and migrating the database. "
     python manage.py makemigrations main --noinput 
