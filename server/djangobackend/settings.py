@@ -29,7 +29,6 @@ APPEND_SLASH = True
 
 ALLOWED_HOSTS = ["localhost", '127.0.0.1', 'patpicha-cars.apic.eu-gb.mybluemix.net']
 
-CSRF_TRUSTED_ORIGINS = ['patpicha-cars.apic.eu-gb.mybluemix.net']
 # Application definition
 
 INSTALLED_APPS = [
